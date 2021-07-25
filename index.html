@@ -1,0 +1,45 @@
+<h3>Powerd by Node.js</h3>
+
+<h5>Attention!If u are a English speaker,Please read <a href="https://zenyanle.github.io/node-unblocker/en.html" title="English version">English version</a></h5>
+
+<h4>原项目 <a href="https://github.com/nfriedly/node-unblocker" title="node-unblocker">node-unblocker</a></h4>
+
+<p><strong>node-unblocker</strong>是一个由nfredly开发的Node.js网页代理项目</p>
+
+<p>但是原项目没有强制跳转https功能，这使其安全性大大减小</p>
+
+<p>所以这是一个教你如何在VPS上部署有跳转https功能的node-unblocker的教程</p>
+
+<h4>第一步</h4>
+
+<p><code>git clone https://github.com/zhangke200377/heroku-node-proxy.git</code>
+克隆此仓库</p>
+
+<h4>第二步</h4>
+
+<p>安装相关程序
+<code>curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh</code></p>
+
+<p><code>sudo bash nodesource_setup.sh</code></p>
+
+<p><code>sudo apt install nodejs -y</code></p>
+
+<p><code>sudo apt install build-essential -y</code></p>
+
+<h4>第三步</h4>
+
+<p><code>cd heroku-node-proxy</code></p>
+
+<p><code>npm install</code></p>
+
+<p><code>npm start</code></p>
+
+<h4>第四步</h4>
+
+<p>用Nginx反向代理127.0.01:8080</p>
+
+<p>Nginx配置写法如下</p>
+
+<p><a href="https://raw.githubusercontent.com/zenyanle/node-unblocker/main/peizhi.txt" title="Nginx">Nginx</a></p>
+
+<h2>注意禁止用于非法用途，仅供学习参考</h2>
