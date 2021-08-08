@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Word Online</title>
+        <script type="text/javascript" src="https://onlyoffice-zenyanle.cloud.okteto.net/web-apps/apps/api/documents/api.js"></script>
+        <style>
+            body {margin: 0;}
+            iframe {height: 100vh;}
+        </style>
+    </head>
+    <body>
+        <div id="placeholder"></div>
+        <script language="javascript" type="text/javascript">
+            var docEditor = new DocsAPI.DocEditor("placeholder",{
+                "document": {
+                    "fileType": "docx",
+                    "title": "Word.docx",
+                    "url": prompt("请输入文档URL，默认新建空白文档","https://onlyoffice.web.app/NewDocument/Word.docx")
+                },
+                "documentType": "text"
+            });
+        </script>
+    </body>
+</html>
